@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teampage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        h5 {
+            margin-left: 30px;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            /* ระยะห่างระหว่างคอลัมน์ */
+        }
+
+        .flex-column {
+            flex: 1;
+            /* ให้แต่ละคอลัมน์มีความกว้างเท่ากัน */
+        }
+
+        .hee {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        pic {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-orange">
+        <div class="container">
+            <a class="navbar-brand" href="/homepage" style="margin-right: 600px;">
+                <img src="/_-4-removebg-preview.png"
+                    style="width: 300px; height: auto;">
+            </a>
+        </div>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 80px; margin-right: 0px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homepage">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/update_Product">STORE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CATEGORY
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="http://localhost:3030/category?category=Figure">Figure</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:3030/category?category=Book%2FComic">Book/Comic</a>                            </li>
+                            <li><a class="dropdown-item" href="http://localhost:3030/category?category=Goods">Goods</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="/result2" style="text-decoration: none; color: black;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </a>
+                <a href="" style="text-decoration: none; color: black;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </a>
+                <a href="/login">
+                <button class="btn btn-outline-success" type="submit"
+                    style="background-color: black; color: white; border-color: black;">LOGIN</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+   
+
+    <h1 style="margin-top: 60px; margin-left: 20px; font-size: xx-large;">Book Spin Like Trewwwww Team</h1>
+    <!-- <h1 style="margin-left: 20px; font-size: xx-large;">Trewwwww Team</h1> -->
+    <h5>เกี่ยวกับธุรกิจ</h5>
+    <article class="container">
+        <article class="column">
+            <section class="dummy_text">
+                ธุรกิจเว็บขายสินค้าที่เกี่ยวกับอนิเมะ "Haikyu!!"
+                เป็นการจำหน่ายสินค้าหลากหลายที่เกี่ยวข้องกับอนิเมะและมังงะยอดนิยมเรื่องนี้
+                โดยเน้นเจาะกลุ่มแฟนคลับที่ชื่นชอบกีฬาวอลเลย์บอลและตัวละคร จากเรื่องไฮคิว
+
+                ภายในเว็บมีสินค้ามังงะและของที่ระลึกลิขสิทธิ์แท้ เช่น ฟิกเกอร์ โนรุ หนังสือการ์ตูน และสินค้าอื่นๆ
+
+                ท่านสามารถเพลิดเพลินกับการช้อปปิ้งในดินแดนที่เต็มไปด้วยบรรยากาศและจิตวิญญาณของกีฬาวอลเลย์บอล
+                รวมถึงตัวละครที่ทุกท่านรัก
+            </section>
+        </article>
+        <article class="column">
+            <section>
+                <img src="/Thitaree.png">
+                <h6 style="font-size:medium">6687015 Thitaree Kongkeaw</h6>
+                <a href="mailto:thitaree.kon@student.mahidol.edu">thitaree.kon@student.mahidol.edu</a>
+                <img src="/Sutarnthip.png">
+                <h6 style="  font-size: medium;">6687057 Sutarthip Luangthip</h6>
+                <a href="mailto:sutarnthip.lua@student.mahidol.edu">sutarnthip.lua@student.mahidol.edu</a>
+            </section>
+            
+        </article>
+        <article class="column">
+            <section>
+                <img src="/Daraporn.png"   >
+                <h6 style="font-size:medium;">6687019 Daraporn Seapoo</h6>
+                <a href="mailto:daraporn.sap@student.mahidol.edu">daraporn.sap@student.mahidol.edu</a>
+                <img src="/Pattaraporn.png"  >
+                <h6 style=" font-size: medium;">6687093 Pattaraporn Tonsomboon</h6>
+                <a href="mailto:pattaraporn.tos@student.mahidol.edu">pattaraporn.tos@student.mahidol.edu</a>
+            </section>
+            
+        </article>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+<footer class="slidefooter">
+    
+    <ul >
+        <li><a href="teampage.html">ABOUT US</a></li>
+    </ul>
+   
+</footer>
+
+</html>

@@ -1,0 +1,167 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Product Details Section */
+.product-details {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+.product-image {
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+.image-product {
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    object-fit: contain; /* ปรับให้ภาพหลักดูสมดุล */
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    flex-wrap: wrap; /* ให้จัดเรียงหลายแถวหากพื้นที่ไม่พอ */
+    margin-top: 20px;
+}
+
+.Details-image-product {
+    width: auto;
+    height: auto;
+    max-width: 150px; /* กำหนดความกว้างสูงสุด */
+    max-height: 150px; /* กำหนดความสูงสูงสุด */
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    object-fit: cover; /* ครอบตัดภาพให้พอดีกับขนาด */
+    transition: transform 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+}
+
+.Details-image-product:hover {
+    transform: scale(1.1); /* ขยายเล็กน้อยเมื่อชี้เมาส์ */
+}
+
+/* Product Info */
+.product-info {
+    width: auto;
+    margin-top: 100px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #EB6B0A;
+}
+
+.product-info .price {
+    font-size: 20px;
+    color: #EB6B0A;
+    margin-bottom: 20px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity label {
+    margin-right: 10px;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 5px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #EB6B0A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sku, .category, .tags {
+    display: inline;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+#sku_category_tage {
+    font-weight: bold;
+}
+
+/* Related Products Section */
+.related-category {
+    padding: 50px;
+}
+
+.related-category h3 {
+    margin-bottom: 15px;
+    color: #EB6B0A;
+}
+
+.items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 160px;
+}
+
+.item-image {
+    background-color: #eee;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.per-price {
+    font-weight: bold;
+}
+
+.per-rating {
+    color: #666;
+}
+
+.stars {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #EB6B0A;
+    color: #fff;
+    border: none;
+    padding: 10px 60px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer-content {
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+}

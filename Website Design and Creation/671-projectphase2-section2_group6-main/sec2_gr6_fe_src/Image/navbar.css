@@ -1,0 +1,105 @@
+.navbar {
+    height:80px; /* กำหนดความสูงของ navbar */
+    background-color:#EB6B0A;
+    display: flex; /* ใช้ flexbox สำหรับจัดเรียง */
+    align-items: center; /* จัดแนวกลางแนวตั้ง */
+}
+.navbar-brand img {
+    height: 100px; /* ทำให้โลโก้มีความสูงเต็มที่ของ navbar */
+    width: auto; /* ให้ความกว้างของโลโก้เป็นอัตโนมัติเพื่อรักษาสัดส่วน */
+}
+.navbar-brand {
+  position: relative; /* กำหนดตำแหน่งให้โลโก้ */
+  bottom:  -40px; /* ปรับตำแหน่งโลโก้ให้เลื่อนออกไปด้านซ้าย */
+  z-index: 10; /* ให้อยู่เหนือ navbar */
+}
+@media screen and (max-width: 1000px) {
+.navbar {
+    height:auto; /* กำหนดความสูงของ navbar */
+    background-color:#EB6B0A;
+    display: flex; /* ใช้ flexbox สำหรับจัดเรียง */
+    align-items: center; /* จัดแนวกลางแนวตั้ง */
+}
+.navbar-brand img {
+    height: 20px; /* ทำให้โลโก้มีความสูงเต็มที่ของ navbar */
+    width: auto; /* ให้ความกว้างของโลโก้เป็นอัตโนมัติเพื่อรักษาสัดส่วน */
+}
+.navbar-brand {
+  position: relative; /* กำหนดตำแหน่งให้โลโก้ */
+  bottom:  -40px; /* ปรับตำแหน่งโลโก้ให้เลื่อนออกไปด้านซ้าย */
+  z-index: 10; /* ให้อยู่เหนือ navbar */
+}
+}
+/* จบnavbar */
+/* footer มี2แบบ fixfooter - อยู่ล่างหน้าจอตลอดไป
+slide footer ใช้แบบว่าอยู่ล่างเนื้อหาทั้งหมด */
+.fixfooter{
+    background-color: #333;
+    color: white;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.container {
+    padding: 5px;
+    @media screen and (min-width : 1024px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+}
+.column {
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 400px;
+    @media screen and (min-width:1024px) {
+       margin-bottom: auto;
+    }
+}
+.dummy_box {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+}
+img{
+    width: 250px;
+    margin-bottom:20px;
+}
+footer a:hover{
+   color: #EB6B0A;
+}
+.container-fluid a:hover{
+    transform: scale(1.1);
+}
+.slidefooter{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    text-align: right;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+} 
+/* จบ footer */

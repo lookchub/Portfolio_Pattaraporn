@@ -1,0 +1,131 @@
+/* search */
+.offcanvas-body {
+    padding-top: 20px; /* เพิ่มช่องว่างด้านบน */
+   
+}
+
+.table2 {
+    margin-top: -20px;
+     /* กำหนดความกว้างของตาราง */
+}
+.table2 td{
+    padding: 15px; /* เพิ่ม padding ให้กับเซลล์ในตาราง */
+    border: 1px solid #ffffff; /* เพิ่มเส้นขอบให้กับตาราง */
+    text-align: left;
+    width: 30%;
+    background-color: #EB6B0A;
+    color: #ffffff;
+}
+ .table2 th{
+    border: 1px solid #EB6B0A;
+    text-align: left;
+    width: 1000px;
+    margin-left :20px;
+} 
+.starrating {
+    display: flex;
+    direction: row-reverse;
+    
+}
+
+.starrating input {
+    display: none;
+}
+
+.starrating label {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.starrating input:checked ~ label {
+    color: #ffe600; 
+}
+
+.starrating label:hover,
+.starrating label:hover ~ label {
+    color:#EB6B0A;
+}
+
+/* result */
+main {
+    padding: 50px;
+}
+
+.search-section {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.resultcontent {
+    /* background-color: #be5006; */
+    /* padding-top: 50px; */
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.resultcontent .results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.resultcontent .results .card {
+    width: 252px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.resultcontent .results .card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+.resultcontent .results .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.resultcontent .results .card h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    height: 75px;
+}
+.resultcontent .results .card p {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* .resultcontent .results .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resultcontent .results .card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.resultcontent .results .card .placeholder {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px auto;
+}
+
+.resultcontent .results .card .resultbutton {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+} */

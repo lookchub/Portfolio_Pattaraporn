@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>loginPJ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="result2.css">
+
+  <style>
+
+  </style>
+</head>
+
+
+<body>
+  <!-- nav-->
+  <nav class="navbar navbar-expand-lg bg-orange">
+    <div class="container">
+      <a class="navbar-brand" href="/homepage">
+        <img src="/_-4-removebg-preview.png" style="width: 300px; height: auto;">
+      </a>
+    </div>
+    <div class="container-fluid" style="margin-left: 40% ; padding-right: 5px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 80px; margin-right: 0px;">
+          <li class="nav-item">
+            <a class="nav-link" href="/homepage">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/update_Product">STORE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CATEGORY
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://localhost:3030/category?category=Figure">Figure</a></li>
+              <li><a class="dropdown-item" href="http://localhost:3030/category?category=Book%2FComic">Book/Comic</a>                            </li>
+              <li><a class="dropdown-item" href="http://localhost:3030/category?category=Goods">Goods</a></li>
+          </ul>
+          </li>
+
+        </ul>
+        <button class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop" style="background-color: #EB6B0A; border-color: #EB6B0A;">
+          <i class="fas fa-search search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="black" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg></i>
+        </button>
+        <a href="" style="text-decoration: none; color: black;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-cart"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+          </svg>
+        </a>
+
+        <button class="btn btn-outline-success" type="submit" onclick="location.href='/login'"
+          style="background-color: black; color: white; border-color: black;">LOGIN</button>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <form id="searchForm" class="form">
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
+      style="margin-bottom: 0px; height: 50%;">
+      <div class="offcanvas-header">
+        <input id="PDName" type="text" placeholder="Search name of product" size="120" name="PDName">
+      </div>
+      <div class="offcanvas-body" style="margin-top: 0px;">
+        <table class="table2">
+          <tr>
+            <td>Category</td>
+            <th>
+              <select id="category" name="category" class="form-select" aria-label="Default select example">
+                <option value="">None</option>
+                <option value="Figure">Figure</option>
+                <option value="Book/Comic">Book/Comic</option>
+                <option value="Goods">Goods</option>
+              </select>
+            </th>
+          </tr>
+          <tr>
+            <td>Tag</td>
+            <th>
+              <select id="tags" name="tags" class="form-select" aria-label="Default select example">
+                <option value="">None</option>
+                <option value="Pre-Order">Pre-Order</option>
+                <option value="New">New</option>
+                <option value="Sale">Sale</option>
+              </select>
+            </th>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <th>
+              <label for="minPrice">Min Price:</label>
+              <input type="number" id="minPrice" name="minPrice" step="0.01" min="0">
+              <label for="maxPrice">Max Price:</label>
+              <input type="number" id="maxPrice" name="maxPrice" step="0.01" min="0">
+
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Filter
+            </td>
+            <th>
+              <label for="sort">Sort by Price:</label>
+              <select id="sort" name="sort">
+                <option value="">None</option>
+                <option value="ASC">Ascending</option>
+                <option value="DESC">Descending</option>
+              </select>
+            </th>
+          </tr>
+        </table>
+        <button type="reset" class="btn btn-secondary" style="margin-left: 88%; margin-top: 10px;">Clear</button>
+        <!-- อันนี้เสิดปุ่มส้ม -->
+        <button type="submit" class="btn btn-primary"
+          style="background-color: #EB6B0A; border-color: #EB6B0A;margin-top: 10px;">Search</button>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- content -->
+  <div class="search-section">
+    <h1>Search results</h1>
+    <p>Please click the search button again to enter search form</p>
+    <p id="number"></p>
+  </div>
+  <!-- <button type="button" id="selectAllButton">Select All</button> -->
+  <!-- แก้  ปุ่มall -> submit-->
+
+  <button id="selectAllButton" type="submit" class="btn btn-primary"
+    style="background-color: #EB6B0A; border-color: #EB6B0A;margin-top: 10px;"> Select All</button>
+  <div class="resultcontent">
+    <section class="results" id="results">
+    </section>
+  </div>
+
+  <!-- footer -->
+  <footer class="fixfooter">
+    <ul>
+      <li><a href="/teampage">ABOUT US</a></li>
+    </ul>
+  </footer>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("selectAllButton");
+      if (button) {
+        button.addEventListener("click", selectAll);
+      } else {
+        console.error("Button not found");
+      }
+    });
+  
+    function selectAll() {
+      fetch("http://localhost:3000/products")
+        .then((response) => response.json())
+        .then((products) => {
+          displayResults(products);
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+    }
+  
+    function displayResults(products) {
+  const results = document.getElementById("results");
+  results.innerHTML = ""; // ลบผลลัพธ์เดิม
+
+  if (products.length === 0) {
+    results.textContent = "No products found.";
+    return;
+  }
+
+  products.forEach((product) => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    // ตรวจสอบ path ของรูปภาพ
+    const imagePath = product.image
+      ? (product.image.startsWith("http")
+          ? product.image // ใช้ URL ที่เริ่มต้นด้วย http
+          : `http://localhost:3000/uploads/${product.image}`) // ใช้ local path
+      : "https://via.placeholder.com/150"; // ใช้ placeholder ถ้าไม่มีรูปภาพ
+
+    const image = document.createElement("img");
+    image.src = imagePath;
+    image.alt = product.Name || "Product Image";
+
+    const title = document.createElement("h4");
+    title.textContent = product.Name || "Unnamed Product";
+
+    // แก้ไขการแสดงผล Price
+    const price = document.createElement("p");
+    if (product.Price && !isNaN(product.Price)) {
+      price.textContent = `$${parseFloat(product.Price).toFixed(2)}`; // แปลงเป็นตัวเลขแล้วใช้ toFixed
+    } else {
+      price.textContent = "Price not available"; // ข้อความสำรองกรณีไม่มีราคา
+    }
+
+    // การคลิกที่ card เพื่อเปลี่ยนเส้นทาง
+    card.addEventListener("click", () => {
+      const productId = product.SKU; // ใช้ SKU เป็น productId
+      window.location.href = `/learnmore?productId=${productId}`;
+    });
+
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(price);
+    results.appendChild(card);
+  });
+}
+
+  
+document.getElementById('searchForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const PDName = document.getElementById('PDName').value.trim();
+  const tags = document.getElementById('tags').value || null;
+  const minPrice = parseFloat(document.getElementById('minPrice').value) || null;
+  const maxPrice = parseFloat(document.getElementById('maxPrice').value) || null;
+  const category = document.getElementById('category').value || null;
+  const sort = document.getElementById('sort').value || null;
+
+  const data = {
+    PDName: PDName,
+    tags: tags,
+    minPrice: minPrice,
+    maxPrice: maxPrice,
+    category: category,
+    sort: sort
+  };
+
+  try {
+    const response = await fetch('http://localhost:3000/search', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error('ไม่สามารถดึงข้อมูลได้');
+    }
+
+    const results = await response.json();
+    displayResults(results);
+  } catch (error) {
+    console.error(error);
+    const results = document.getElementById('results');
+    results.textContent = 'เกิดข้อผิดพลาดในการค้นหาผลิตภัณฑ์ โปรดลองใหม่อีกครั้ง';
+  }
+});
+
+  </script>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>

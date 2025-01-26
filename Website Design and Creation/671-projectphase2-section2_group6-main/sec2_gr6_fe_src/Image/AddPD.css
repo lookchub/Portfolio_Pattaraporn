@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head-text {
+    /* border: solid black 2px; */
+    margin-top: 4%;
+    margin-left: 20%;
+}
+
+.image-upload {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    border-radius: 20px;
+    padding-top: 8%;
+}
+.image-upload img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status {
+    display: inline-block;
+    margin-left: 65%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.status.active {
+    background-color: #79D684;
+}
+.status.inactive {
+    background-color: #EC918E;
+}
+
+
+
+
+/* .add-btn,
+.return-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+} */
+
+.return-btn {
+    background-color: white;
+    border:  2px solid #EB6B0A;
+    color: #EB6B0A;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.save-btn {
+    background-color: #EB6B0A;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.upload-file{
+    float:left
+}
+.form-fields{
+    display:flex;
+    flex-direction: column;
+}
+
+.product-form {
+    margin: auto;
+    margin-top: 5%;
+}
+
+label {
+    font-weight: 500;
+}

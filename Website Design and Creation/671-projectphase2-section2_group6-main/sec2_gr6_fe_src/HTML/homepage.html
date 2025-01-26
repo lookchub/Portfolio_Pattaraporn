@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HaikyuuPJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+
+<body>
+    <!-- nav-->
+    <nav class="navbar navbar-expand-lg bg-orange">
+        <div class="container">
+            <a class="navbar-brand" href="/homepage" style="margin-right: 600px;">
+                <img src="/_-4-removebg-preview.png"
+                    style="width: 300px; height: auto;">
+            </a>
+        </div>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 80px; margin-right: 0px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homepage">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/update_Product">STORE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CATEGORY
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="http://localhost:3030/category?category=Figure">Figure</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:3030/category?category=Book%2FComic">Book/Comic</a>                            </li>
+                            <li><a class="dropdown-item" href="http://localhost:3030/category?category=Goods">Goods</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="/result2" style="text-decoration: none; color: black;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </a>
+                <a href="" style="text-decoration: none; color: black;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </a>
+                <a href="/login">
+                <button class="btn btn-outline-success" type="submit"
+                    style="background-color: black; color: white; border-color: black;">LOGIN</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="homecontent">
+        <div class="textbox">
+            <h2>What is<br><span>Haikyuu merch</span></h2>
+            <p>ธุรกิจ Haikyuu merch เป็นเว็บขายสินค้าน่ารักๆของอนิเมะไฮคิว! สินค้าที่ว่ามีทั้งหมดหลากหลายอย่างมาก
+                ยกตัวอย่างเช่น 3 สินค้าขายดีที่ทางเรายกตัวอย่างมาให้ทุกท่านดูทางฝั่งซ้ายมือ!
+                หวังว่าทุกคนจะเอ็นจอยกับสินค้าที่เราเลือกนำมาขาย และสบายใจกับการเลือกซื้อสินค้ากับทางเรานะคะ!</p>
+            <a href="/update_Product">View All Products</a>
+        </div>
+
+        <div class="homecard">
+            <div class="container">
+                <img src="https://animatebkk-online.com/wp-content/uploads/2024/11/4535123842283-3.jpg"
+                    class="card-img-top" id="merch" style="height: 500px; width: 600px; padding: 10px;">
+                <!-- <img src="haikyuumerch1.jpg" id="merch"> -->
+            </div>
+            <!-- <button type="button" onclick="nextPage()">Learn More</button> -->
+            <button type="button" id="learnMore">Learn More</button>
+
+        </div>
+    </div>
+    <ul class="homethumb">
+        <li><img src="/homepage1.png" onclick="imgSlider('homepage1.png')"></li>
+        <li><img src="/homepage2.png" onclick="imgSlider('homepage2.png')"></li>
+        <li><img src="/homepage3.png" onclick="imgSlider('homepage3.png')"></li>
+    </ul>
+
+    <!-- footer -->
+    <footer class="fixfooter">
+        <ul>
+            <li><a href="/teampage">ABOUT US</a></li>
+        </ul>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    function imgSlider(img) {
+        if (img === 'homepage2.png') {
+            document.querySelector('#merch').src = 'https://animatebkk-online.com/wp-content/uploads/2024/11/4544815079777-768x576.jpg';
+        } else if (img === 'homepage1.png') {
+            document.querySelector('#merch').src = 'https://animatebkk-online.com/wp-content/uploads/2024/11/4535123842283-3.jpg';
+        } else if (img === 'homepage3.png') {
+            document.querySelector('#merch').src = 'https://animatebkk-online.com/wp-content/uploads/2024/10/4550621139529.jpg';
+        }
+    }
+
+    document.querySelector('#learnMore').addEventListener('click', nextPage);
+    function nextPage() {
+        // Get the current image src
+        let merch = document.querySelector('#merch').src;
+        console.log(merch)
+
+        // if (merch === 'https://animatebkk-online.com/wp-content/uploads/2024/11/4535123842283-3.jpg') {
+        //     // Redirect to 1.html
+        //     window.location.href = 'learnmore.html?productId=4535123842283';
+        // } else if (merch === 'https://animatebkk-online.com/wp-content/uploads/2024/11/4544815079777-768x576.jpg') {
+        //     // Redirect to 2.html
+        //     window.location.href = 'learnmore.html?productId=4544815079777';
+        // } else if (merch === 'https://animatebkk-online.com/wp-content/uploads/2024/10/4550621139529.jpg') {
+        //     // Redirect to 3.html
+        //     window.location.href = 'learnmore.html?productId=4550621139529';
+        // }
+
+        if (merch.includes('4535123842283-3.jpg')) {
+            window.location.href = 'learnmore?productId=4535123842283';
+        } else if (merch.includes('4544815079777-768x576.jpg')) {
+            window.location.href = 'learnmore?productId=4544815079777';
+        } else if (merch.includes('4550621139529.jpg')) {
+            window.location.href = 'learnmore?productId=4550621139529';
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,99 @@
+/* --- Reset และ Font --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.carousel-inner:hover {
+        transform: scale(1.02); /* ขยายการ์ดให้ใหญ่ขึ้นเมื่อเมาส์ชี้ */
+        transition: transform 0.3s ease; /* เพิ่มการเคลื่อนไหวให้นุ่มนวล */
+    
+}
+/* --- Carousel --- */
+.carousel-inner {
+    padding: 30px 170px;
+}
+
+.carousel-inner img {
+    width: 100%; /* รูปภาพเต็มความกว้าง */
+    height: 500px; /* ความสูงคงที่ */
+    object-fit: cover; /* ครอบคลุมพื้นที่โดยคงสัดส่วน */
+    border-radius: 15px; /* เพิ่มมุมโค้ง */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังใส */
+    border-radius: 50%; /* ปุ่มทรงกลม */
+    padding: 20px; /* เพิ่มขนาดปุ่ม */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ปุ่ม */
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* เปลี่ยนจุดเป็นวงกลม */
+    background-color: #ff6600; /* สีส้ม */
+    margin: 0 5px; /* ระยะห่างระหว่างจุด */
+}
+
+.carousel-indicators .active {
+    background-color: #ff3300; /* สีส้มเข้มเมื่อเลือก */
+}
+
+#carouselExampleInterval {
+    margin-top: 20px;
+}
+
+
+/* แก้ */
+
+.row {
+    display: flex; /* ใช้ flexbox เพื่อจัดการตำแหน่ง */
+    flex-wrap: wrap; /* ทำให้การ์ดขึ้นแถวใหม่เมื่อเกินพื้นที่ */
+    justify-content: space-between; /* จัดให้การ์ดมีระยะห่างที่เท่ากัน */
+    margin: 0; /* กำจัด margin ที่ไม่จำเป็น */
+    padding: 0; /* กำจัด padding ที่ไม่จำเป็น */
+}
+
+
+
+
+.card {
+    width: 180px; /* ใช้ความกว้างเต็มคอลัมน์ที่ได้รับจาก grid */
+    max-width: 300px; /* จำกัดขนาดการ์ดสูงสุด */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    /* text-align: center; จัดข้อความให้อยู่กลาง */
+}
+
+.card:hover {
+    transform: scale(1.05); /* ขยายการ์ดให้ใหญ่ขึ้นเมื่อเมาส์ชี้ */
+    transition: transform 0.3s ease; /* เพิ่มการเคลื่อนไหวให้นุ่มนวล */
+}
+
+
+.card-img-top {
+    width: 100%; /* รูปภาพเต็มการ์ด */
+    height: 180px; /* ความสูงคงที่ */
+    object-fit: cover; /* ครอบคลุมพื้นที่รูปภาพ */
+}
+
+
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    height: 75px;
+    
+}
+
+.card-price {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+

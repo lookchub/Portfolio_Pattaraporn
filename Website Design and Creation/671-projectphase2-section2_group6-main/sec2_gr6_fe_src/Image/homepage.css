@@ -1,0 +1,94 @@
+
+/* homepage */
+.homecontent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+    padding-bottom: 0;
+    padding-top: 100px;
+}
+
+.homecontent .textbox{
+    position: relative;
+    max-width: 600px;
+}
+
+.homecontent .textbox h2{
+    color: #EB6B0A;
+    font-size: 3em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.homecontent .textbox h2 span {
+    font-size: 2em;
+
+}
+
+.homecontent .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-weight: 500;
+    background: #f6f6f6;
+    color: #EB6B0A;
+    border-radius: 40px;
+    text-decoration: none;
+}
+.homecontent .textbox a:hover{
+    background: #faf4ea;
+}
+
+.homecontent .homecard { 
+    width: 600px;
+    padding: 120px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+}
+.homecard .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.homecard button {
+    background-color: #EB6B0A;
+    margin: auto;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.homecard button:hover {
+    background-color:#be5006;
+}
+.homethumb {
+    padding-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.homethumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.homethumb li:hover {
+    transform: translateY(-15px);
+}
+.homethumb li img {
+    max-width: 150px;
+}
+
